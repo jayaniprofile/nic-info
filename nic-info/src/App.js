@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import NICForm from "./components/NICForm";
 import NICInfo from "./components/NICInfo";
+import "./components/NICForm.css";
 
 function App() {
   const [nicNumber, setNICNumber] = useState("");

@@ -1,4 +1,5 @@
 import React from "react";
+import "./NICForm.css";
 
 const NICInfo = ({ nicNumber }) => {
   const extractBirthDate = () => {
@@ -56,10 +57,10 @@ const NICInfo = ({ nicNumber }) => {
   };
 
   return (
-    <div>
+    <div className="info">
       <h2>NIC Information</h2>
       <p>Birth Date: {extractBirthDate()}</p>
-      <p>Gender: {extractGender()}</p>
+      <p className="gender">Gender: {extractGender()}</p>
     </div>
   );
 };
